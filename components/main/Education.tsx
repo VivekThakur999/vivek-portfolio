@@ -30,7 +30,7 @@ const educationData = [
     grade: "Percentage: 79.86%",
     iconBg: "#06d6a0",
     points: [
-      "Completed Diploma in Engineering: Computer Enginnering.",
+      "Completed Diploma in Engineering: Computer Engineering.",
       "Secured good position in College Level Computer Science examination.",
       "Participated in district-level coding and technical quiz competitions.",
       "Developed strong logical and problem-solving foundation through programming assignments.",
