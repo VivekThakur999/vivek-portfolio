@@ -23,7 +23,7 @@ const educationData = [
     ]
   },
   {
-    degree: "Diploma in Enineering(Computer Enginnering)",
+    degree: "Diploma in Enineering(Computer Engineering)",
     institution: "KCES's College of Engineering and Management(MSBTE)",
     location: "Jalgaon, Maharashtra",
     date: "2020 - 2021",
