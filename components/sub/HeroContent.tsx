@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import {
   slideInFromLeft,
@@ -9,8 +9,11 @@ import {
 } from "@/utils/motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import BlackHoleTransition from "@/components/BlackHoleTransition";
 
 const HeroContent = () => {
+  const [showPortal, setShowPortal] = useState(false);
+
   return (
     <motion.div
       initial="hidden"
@@ -30,7 +33,7 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-4 sm:gap-6 mt-4 sm:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-4 sm:gap-6 mt-4 sm:mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white max-w-[600px]"
         >
           <span>
             Providing
@@ -48,13 +51,26 @@ const HeroContent = () => {
         >
           I’m an Android Developer and UI/UX Designer building practical, user-focused applications. Explore my projects and technical skills.
         </motion.p>
-        <motion.a
+
+        {/* BUTTONS */}
+        <motion.div
           variants={slideInFromLeft(1)}
-          href="#projects"
-          className="py-2 sm:py-3 px-4 sm:px-6 button-primary text-center text-white cursor-pointer rounded-lg max-w-[180px] sm:max-w-[200px] mx-auto lg:mx-0 text-sm sm:text-base"
+          className="flex gap-4 flex-wrap justify-center lg:justify-start"
         >
-          Learn More!
-        </motion.a>
+          <a
+            href="#projects"
+            className="py-2 sm:py-3 px-4 sm:px-6 button-primary text-center text-white cursor-pointer rounded-lg max-w-[180px] sm:max-w-[200px] text-sm sm:text-base"
+          >
+            Learn More!
+          </a>
+
+          <button
+            onClick={() => setShowPortal(true)}
+            className="py-2 sm:py-3 px-4 sm:px-6 rounded-lg border border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-black transition max-w-[200px] text-sm sm:text-base"
+          >
+            Enter the Void
+          </button>
+        </motion.div>
       </div>
 
       <motion.div
@@ -69,6 +85,8 @@ const HeroContent = () => {
           className="w-[200px] h-[200px] sm:w-[280px] sm:h-[280px] md:w-[350px] md:h-[350px] lg:w-[500px] lg:h-[500px] xl:w-[650px] xl:h-[650px]"
         />
       </motion.div>
+
+      {showPortal && <BlackHoleTransition />}
     </motion.div>
   );
 };
