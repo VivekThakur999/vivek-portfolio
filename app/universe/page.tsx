@@ -12,6 +12,7 @@ export default function UniversePage() {
     >
       <h1 className="text-4xl sm:text-5xl font-bold text-orange-400">
         Welcome to the Universe
+        Work is under Progress
       </h1>
     </motion.div>
   );
