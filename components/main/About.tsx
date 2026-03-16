@@ -10,7 +10,7 @@ const About = () => {
   const handleDownloadCV = () => {
     // Create a link element
     const link = document.createElement('a');
-    link.href = '/vivekresume.pdf';
+    link.href = '/vivekr.pdf';
     link.download = 'Vivek Resume.pdf'; // Your custom filename here
     document.body.appendChild(link);
     link.click();
@@ -63,7 +63,7 @@ const About = () => {
                 Beyond coursework, I actively work on personal projects, explore new technologies, and continuously refine my development and design skills. I’m driven by curiosity, consistency, and the goal of creating digital experiences that feel simple, effective, and meaningful.
               </p>
             </div>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 items-center">
               <motion.button
                 variants={slideInFromLeft(1.2)}

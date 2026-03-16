@@ -53,7 +53,45 @@ const Experience = () => {
               <li>Applied user-centered design principles and improved usability through feedback</li>
             </ul>
           </motion.div>
+          {/* Experience 4 */}
+          <motion.div
+            variants={slideInFromRight(1)}
+            className="p-6 sm:p-8 rounded-xl bg-[#0f0f1a] border border-[#7042f88b]"
+          >
+            <h3 className="text-xl sm:text-2xl font-semibold text-white">
+              Data Analytic Intern
+            </h3>
+            <p className="text-sm sm:text-base text-gray-400 mt-1">
+              Sysslan IT Technologies | Internship
+            </p>
 
+            <ul className="mt-4 text-gray-300 text-sm sm:text-base list-disc list-inside space-y-2">
+              <li>Worked on data analysis and preprocessing using Python and popular data science libraries</li>
+              <li>Performed data visualization and interpretation using tools like Pandas and Matplotlib</li>
+              <li>Explored machine learning concepts and built basic predictive models</li>
+              <li>Collaborated with the team to understand real-world data-driven problem solving</li>
+            </ul>
+          </motion.div>
+
+          {/* Experience 5 */}
+          <motion.div
+            variants={slideInFromLeft(1.2)}
+            className="p-6 sm:p-8 rounded-xl bg-[#0f0f1a] border border-[#7042f88b]"
+          >
+            <h3 className="text-xl sm:text-2xl font-semibold text-white">
+              Full-Stack Developer Intern
+            </h3>
+            <p className="text-sm sm:text-base text-gray-400 mt-1">
+              Cognifyz Technologies | Internship
+            </p>
+
+            <ul className="mt-4 text-gray-300 text-sm sm:text-base list-disc list-inside space-y-2">
+              <li>Developed responsive web applications using modern frontend technologies</li>
+              <li>Worked with backend frameworks and REST APIs to build scalable features</li>
+              <li>Collaborated with team members through GitHub for version control and project management</li>
+              <li>Improved performance and UI responsiveness across multiple devices</li>
+            </ul>
+          </motion.div>
           {/* Experience 2 */}
           <motion.div
             variants={slideInFromRight(0.8)}

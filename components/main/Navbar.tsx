@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 sm:px-6 lg:px-10">
       <div className="w-full h-full flex flex-row items-center justify-between m-auto px-2 sm:px-4">
-        
+
         {/* Logo */}
         <a href="#start" className="h-auto w-auto flex flex-row items-center">
           <Image
@@ -29,7 +29,7 @@ const Navbar = () => {
             <a href="#education" className="px-2 hover:text-purple-400 transition-colors">
               Education
             </a>
-             <a href="#experience" className="px-2 hover:text-purple-400 transition-colors">
+            <a href="#experience" className="px-2 hover:text-purple-400 transition-colors">
               Experience
             </a>
             <a href="#skills" className="px-2 hover:text-purple-400 transition-colors">
@@ -61,7 +61,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/vivek-thakur-53188730a/"
+            href="https://www.linkedin.com/in/vivekthakur999"
             target="_blank"
             rel="noopener noreferrer"
           >

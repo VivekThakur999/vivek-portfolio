@@ -35,7 +35,7 @@ const Contact = () => {
     message: string;
   }
 
-  interface HandleChangeEvent extends React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> {}
+  interface HandleChangeEvent extends React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement> { }
 
   const handleChange = (e: HandleChangeEvent) => {
     const { name, value } = e.target;
@@ -155,7 +155,7 @@ const Contact = () => {
               <h4 className="text-xl font-semibold text-white">Follow Me</h4>
               <div className="flex gap-4">
                 <Link
-                  href="linkedin.com/in/vivek-thakur-53188730a"
+                  href="linkedin.com/in/vivekthakur999"
                   target="_blank"
                   className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-500 to-cyan-500 flex items-center justify-center hover:scale-110 transition-transform duration-300"
 
@@ -288,16 +288,16 @@ const Contact = () => {
         </motion.div>
       </motion.div>
       {/* Footer */}
-<footer className="w-full mt-10 border-t border-[#7042f88b] bg-[#030014]">
-  <div className="max-w-[1200px] mx-auto px-6 py-6 text-center">
-    <p className="text-sm text-gray-400">
-      © Copyright 2026 | All Rights Reserved By{" "}
-      <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-semibold">
-        Vivek Thakur
-      </span>
-    </p>
-  </div>
-</footer>
+      <footer className="w-full mt-10 border-t border-[#7042f88b] bg-[#030014]">
+        <div className="max-w-[1200px] mx-auto px-6 py-6 text-center">
+          <p className="text-sm text-gray-400">
+            © Copyright 2026 | All Rights Reserved By{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 font-semibold">
+              Vivek Thakur
+            </span>
+          </p>
+        </div>
+      </footer>
 
     </section>
   );
